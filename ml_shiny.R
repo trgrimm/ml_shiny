@@ -531,6 +531,8 @@ server <- function(input, output, session) {
 shinyApp(ui = ui, server = server)
 
 
+rsconnect::writeManifest(appFiles = 'ml_shiny.R', appMode = 'shiny')
+
 # Things to do:
 
 # - Plot showing model info (like variable importance for RF/XGBoost)
