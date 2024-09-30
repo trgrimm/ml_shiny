@@ -531,7 +531,10 @@ server <- function(input, output, session) {
 shinyApp(ui = ui, server = server)
 
 
-rsconnect::writeManifest(appFiles = 'ml_shiny.R', appMode = 'shiny')
+# If writing manifest file to publish app via Posit connect 
+# rsconnect::writeManifest(appFiles = 'ml_shiny.R', appMode = 'shiny')
+
+
 
 # Things to do:
 
